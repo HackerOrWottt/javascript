@@ -12,6 +12,7 @@ let myObj = {
 
 //Declaration of functions
 const myFunction = function(){
+    //Function Body - main working of function is  here -->
     console.log("Hello World");
     
 }
