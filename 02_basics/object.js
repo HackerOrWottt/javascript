@@ -12,3 +12,5 @@ const JsUser = {
 // console.log(JsUser.name);
 // console.log(JsUser["name"]);
 
+Object.freeze(JsUser) // tis function locks value of object , and further we cannot update object
+
