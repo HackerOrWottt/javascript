@@ -14,3 +14,37 @@ const JsUser = {
 
 Object.freeze(JsUser) // tis function locks value of object , and further we cannot update object
 
+//2. object creation via constructor --> singleton object means only one instance of an object is created .
+
+const tinderUser= new Object()
+// console.log(tinderUser);
+
+tinderUser.id= 123
+tinderUser.name = "Abhishek"
+tinderUser.isLoggedIn = false
+
+// console.log(tinderUser);
+
+// merging  objects
+
+const myObj1= {
+    1 : "a",
+    2 : "b"
+}
+const myObj2= {
+    3 : "c",
+    4 : "d"
+}
+
+// const myObj3= {myObj1, myObj2} // bad practice
+// two ways
+
+// 1. const myObj3 = Object.assign({} , myObj1, myObj2) 
+// 2. const myObj3 = {...myObj1, ...myObj2} // spread operator
+
+// to access only keys or only values , returns in array format
+
+console.log(Object.keys(tinderUser));
+console.log(Object.values(tinderUser));
+
+
