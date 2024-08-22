@@ -16,6 +16,9 @@ Object.freeze(JsUser) // tis function locks value of object , and further we can
 
 //2. object creation via constructor --> singleton object means only one instance of an object is created .
 
+
+// Object session 2
+
 const tinderUser= new Object()
 // console.log(tinderUser);
 
@@ -47,4 +50,16 @@ const myObj2= {
 console.log(Object.keys(tinderUser));
 console.log(Object.values(tinderUser));
 
+// objects session 3
 
+// destructuring of an object
+
+const course= {
+    courseName : "JS HINDI" ,
+    price : 999 ,
+    courseTeacher : "AbhishekVarma"
+}
+
+// It extracts the value from an object which can be easily used like below - destructure of an object
+const {courseTeacher} = course
+console.log(courseTeacher);
