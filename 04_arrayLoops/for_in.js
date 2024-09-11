@@ -29,6 +29,5 @@ for (const key in myArr) {
 
 for (const key in myArr) {
     console.log(myArr[key]);
-    
- }
+}
 
